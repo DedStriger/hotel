@@ -7,6 +7,13 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body, #root, main{
+  min-height: 100vh;
+}
+
 :root{
-  
+  --white: #fff;
+  --text: #424242;
+  --gray: #C9CACC;
+  --red:#EB1717;
 }
