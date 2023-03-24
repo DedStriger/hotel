@@ -11,7 +11,7 @@ type Options = {
 
 export default function getHotels(options: Options){
     const params = normalizeToGetParams({...options, limit: '20', currency: 'rub'})
-    const url = 'http://engine.hotellook.com/api/v2/cache.json'+params
+    const url = 'https://engine.hotellook.com/api/v2/cache.json'+params
     return async function(dispatch: AppDispatch) {
         try{
             dispatch({type: HOTELS_REQUEST})
