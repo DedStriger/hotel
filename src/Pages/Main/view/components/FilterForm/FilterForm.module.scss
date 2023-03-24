@@ -1,0 +1,19 @@
+.container{
+    padding: 32px;
+    box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    background-color: var(--white);
+}
+
+input{
+    margin-bottom: 16px;
+}
+
+label{
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    line-height: 19px;
+    margin-bottom: 7px;
+    color: var(--text);
+}

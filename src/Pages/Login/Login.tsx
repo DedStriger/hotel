@@ -29,12 +29,14 @@ export default function Login(){
             setError({variant: LoginErrorVariant.Pass, text: 'Обязательное поле'})
             return;
         }
+
+        // eslint-disable-next-line
         if(!/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(login)){
             setError({variant: LoginErrorVariant.Login, text: 'Введите корректный email'})
             return;
         }
 
-        if(/[А-Яа-я]/gi.test(pass) && pass.length < 8){
+        if(/[А-Яа-я]/gi.test(pass) || pass.length < 8){
             setError({variant: LoginErrorVariant.Pass, text: 'Введите корректный пароль'})
             return;
         }

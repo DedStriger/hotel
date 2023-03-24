@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    margin-bottom: 32px;
+    gap: 8px;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    padding: 4px 8px;
+    border: 1px solid var(--bg-gray);
+    border-radius: 4px;
+    color: var(--bg-gray);
+    font-size: 14px;
+    line-height: 20px;
+    transition: all .3s;
+
+    &__active{
+        border-color: var(--green);
+        color: var(--green);
+    }
+
+    svg{
+        display: block;
+        path{
+            transition: all .3s;
+        }
+    }
+}
+
+.active_arrow{
+    path{
+        fill-opacity: 1;
+    }
+}

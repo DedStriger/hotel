@@ -1,0 +1,30 @@
+.img{
+    display: block;
+    width: 164px;
+    height: 149px;
+    background-color: var(--bg-gray);
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.container{
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+    max-width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    position: -webkit-sticky;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    
+      &::-moz-scrollbar {
+        width: 0px;
+        height: 0px;
+      }
+}
