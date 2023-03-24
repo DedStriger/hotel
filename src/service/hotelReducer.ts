@@ -62,6 +62,7 @@ export default function hotelReducer(state = initialState, action: Action){
         case UPDATE_OPTION: {
             return {
                 ...state,
+                hotels: [],
                 options: action.options
             }
         }
