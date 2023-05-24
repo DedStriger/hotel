@@ -13,6 +13,10 @@ export default function MainView({onSubmit}:MainViewProps){
     return (
         <div className={styles.page}>
             <Header/>
+            <div className={styles.banner}>
+                <div className={styles.banner__title}>Find Your Home Service</div>
+                <div className={styles.banner__text}>Путешествуйте с комфортом</div>
+            </div>
             <div className={styles.container}>
                 <div className={styles.sidebar}>
                     <FilterForm onSubmit={onSubmit}/>
